@@ -1,6 +1,5 @@
- **PRAK ALPRO ELEKTRO 2025**
-
-# **Pertemuan 1 - Basic Sequence**
+\newpage
+# **SOAL Pertemuan 1 - Basic Sequence**
 
 
 ## ===== MATERI M1 ================================================  
@@ -8,6 +7,9 @@
 ### **1: Kalkulator Konversi Derajat ke Radian**
 
 #### **Contoh Tampilan Program yang Diharapkan**
+
+![ss soal](file_pendukung/foto/ss_M1_1.png){width=100%}  
+
 (Silakan ubah sesuai kemauanmu)
 
 ```
@@ -18,7 +20,7 @@ Sudut dalam radian : 0.25 pi rad
 ```
 
 
-Tujuan:
+**Goal**
 Buatlah sebuah program yang mengkonversi sudut dari satuan derajat ke radian dan mencetak hasilnya dalam dua format: sebagai angka desimal dan sebagai pecahan dari $\pi$.
 
 
@@ -30,7 +32,7 @@ Buatlah sebuah program yang mengkonversi sudut dari satuan derajat ke radian dan
   * Cetak hasil konversi dalam bentuk angka desimal, cukup 3 angka di belakang koma
   * Cetak juga hasil konversi dalam bentuk pecahan dikali $\pi$.
 
-**Rumus**
+**Rumus**  
 $$\text{Radians} = \text{Derajat} \times \frac{\pi}{180}$$
 
 
@@ -38,13 +40,12 @@ $$\text{Radians} = \text{Derajat} \times \frac{\pi}{180}$$
 
 ============================================================================
 
-Tentu, ini adalah versi yang disempurnakan dengan frasa yang lebih familiar dan alur yang lebih jelas untuk mahasiswa.
-
------
+\newpage
 
 ### **2: Kalkulator Torsi**
 
 #### **Contoh Tampilan Program yang Diharapkan**
+![ss soal](file_pendukung/foto/ss_M1_2.png){width=100%}  
 
 (Silakan ubah sesuai kemauanmu)
 
@@ -62,24 +63,18 @@ Berapa besar torsi (τ)?
 Besar torsi adalah 9.938 N·m
 ```
 
-Budi sedang mengerjakan laporan praktikum Fisika Dasar. Ia harus menghitung torsi untuk 10 set data yang berbeda, dan menghitungnya satu per satu dengan kalkulator manual sangat rawan *typo*. "Daripada hitung manual dan salah terus, mending aku buat programnya sekalian\!" pikirnya.
 
-Torsi ($\\tau$) adalah **kekuatan putar**. Bayangkan saat kamu menggunakan kunci pas untuk mengencangkan baut. Gaya dorong tanganmu adalah **$F$**, panjang kunci pas adalah **$r$**, dan kekuatan putaran yang dihasilkan pada baut itulah yang disebut **torsi**.
+**Goal**
+Buatlah program yang menghitung dan mencetak torsi ($\tau$) menggunakan fungsi trigonometri.
 
-**Tujuan:**
-Buatlah program yang menghitung dan mencetak torsi ($\\tau$) menggunakan fungsi trigonometri.
-
-**Rumus**
-$$\tau = r \cdot F \cdot \sin(\theta)$$
 
 **Keterangan:**
 
-  * $\\tau$ adalah torsi (N·m)
+  * $\tau$ adalah torsi (N·m)
   * $r$ adalah panjang lengan tuas (m)
   * $F$ adalah besar gaya yang diberikan (N)
-  * $\\theta$ adalah sudut antara lengan tuas dan arah gaya (derajat)
+  * $\theta$ adalah sudut antara lengan tuas dan arah gaya (derajat)
 
------
 
     
 #### **Petunjuk**
@@ -90,15 +85,19 @@ $$\tau = r \cdot F \cdot \sin(\theta)$$
   * Hitung torsi menggunakan rumus: `τ=rFsin(θ)`.
   * Cetak semua nilai yang digunakan dan hasil akhir torsi dengan label yang jelas.
 
+**Rumus**  
+ $$\tau = r \cdot F \cdot \sin(\theta)$$
 
 
 
 =========================================================================
 
+\newpage
 
 ### **3: Kalkulator Gaya Coulomb**
 
 #### **Contoh Tampilan Program yang Diharapkan**
+![ss soal](file_pendukung/foto/ss_M1_3.png){width=100%}  
 
 (Silakan ubah sesuai kemauanmu)
 
@@ -117,13 +116,9 @@ Berapa besar gaya Coulomb (F)?
 F = 21.576 N
 ```
 
-Budi, si mahasiswa Elektro yang *mager* itu, kini menghadapi musuh bebuyutan lain: gaya tarik-menarik antara muatan. Ia ditantang untuk menhitung gaya Coulomb antara dua partikel, dan angka-angkanya sangat kecil dengan banyak nol. Daripada pusing, Budi memutuskan untuk menulis program yang bisa menghitungnya dalam sekejap.
-
-**Tujuan:**
+**Goal**
 Buatlah program yang menghitung dan mencetak gaya Coulomb ($F$) antara dua muatan titik. satuan yang akan dimasukkan ke program sudah dalam satuan Coulomb dan meter.
 
-**Rumus:**
-$$F = k_e \frac{|q_1 q_2|}{r^2}$$
 
 #### **Petunjuk**
 
@@ -131,19 +126,15 @@ $$F = k_e \frac{|q_1 q_2|}{r^2}$$
   * Berikan nilai numerik pada variabel-variabel ini (kamu bisa menggunakan notasi `e` untuk pangkat 10, contoh: `8.99e9`).
   * Hitung gaya Coulomb menggunakan rumus. Gunakan fungsi `abs()` untuk nilai mutlak $|q\_1 q\_2|$.
   * Cetak semua nilai yang diketahui dan gaya yang dihasilkan ($F$) dengan rapi.
----
-## Bonus: +5 untuk pertemuan minggu ini kalau...
 
-bisa mengeprint hal ini:
+**Rumus:**  
+ $$F = k_e \frac{|q_1 q_2|}{r^2}$$
 
----
+\newpage
 
 ## ===== TUGAS T1 ================================================  
 
 ### **1: Navigasi Robot**
-
-
-### **Misi:**
 
 **Tujuan:**
 
@@ -153,16 +144,27 @@ Buatlah sebuah program yang berisi urutan (sekuens) gerakan untuk menavigasikan 
 
 * **Posisi Awal:** (0, 0)
 * **Tujuan:** (200, 200)
-* **Rintangan:** semua lingkaran merah
-![gambar rintangan](file_pendukung/foto/ss_T1_interactivemode_awal.png)  
+* **Rintangan:** semua lingkaran merah  
+
+![gambar rintangan](file_pendukung/foto/ss_T1_interactivemode_awal.png){width=100%}  
 
 **Instruksi Pengerjaan:**
 
 1.  Buka file `jawabanmu_M1_navigasirobot.py` yang berada di dalam folder `jawaban_akhir`.
 2.  Tuliskan urutan gerakanmu di dalam fungsi yang telah disediakan.
-3.  Gunakan dua perintah utama berikut untuk menggerakkan robot:
-    * `maju(langkah)`: Membuat robot bergerak maju sejumlah `langkah`.
-    * `belok(derajat)`: Membuat robot berbelok ke kanan (+) atau ke kiri (-) sejumlah `derajat`.
+3.  Gunakan perintah berikut untuk menggerakkan robot:
+* `maju(pixel)`
+    * Membuat robot bergerak maju lurus sejauh jumlah `pixel` yang ditentukan. Contoh: `maju(123)`.
+
+* `mundur(pixel)`
+    * Membuat robot bergerak mundur lurus sejauh jumlah `pixel` yang ditentukan. Contoh: `mundur(9)`.
+
+* `putar_kanan(derajat)`
+    * Membuat robot berputar di tempat ke **kanan** sebesar `derajat`. Contoh: `putar_kanan(-120)`.
+
+* `putar_kiri(derajat)`
+    * Membuat robot berputar di tempat ke **kiri** sebesar `derajat`. Contoh: `putar_kiri(90)`.
+
 4.  Susun gerakan sedemikian rupa sehingga robot bisa melewati rintangan dan sampai ke tujuan.
 
 #### **Petunjuk**

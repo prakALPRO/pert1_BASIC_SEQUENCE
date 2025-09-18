@@ -9,7 +9,7 @@ SANGAT Terinspirasi dari buku:
 
 -----
 
-# **Minggu 1: Basic Sequence** 📝
+# **Minggu 1: Basic Sequence** 
 
 ```
 1_basic_sequence/
@@ -42,12 +42,12 @@ SANGAT Terinspirasi dari buku:
 
 ```
 
-
+/newpage
 
 ## ============== **Cheatsheet** ======================
 
 
-#### **Tipe Data Dasar **
+### **Tipe Data Dasar **
 
 | Sintaks | Contoh | Penjelasan |
 | :--- | :--- | :--- |
@@ -55,9 +55,9 @@ SANGAT Terinspirasi dari buku:
 | `int` | `100` | Bilangan bulat. |
 | `float` | `3.14` | Bilangan desimal (pecahan). |
 
------
 
-#### **Output Dasar **
+
+### **Output Dasar **
 
 | Metode | Sintaks & Contoh | Catatan |
 | :--- | :--- | :--- |
@@ -66,29 +66,25 @@ SANGAT Terinspirasi dari buku:
 | **F-String (Disarankan)** | `print(f"Nama: {nama}, Umur: {umur}")` | Paling modern, singkat, dan mudah dibaca. Bisa memasukkan ekspresi langsung (`{harga*jumlah}`). |
 
 
-#### **Komentar **
+### **Komentar **
 
 | Sintaks | Contoh | Penjelasan |
 | :--- | :--- | :--- |
 | `#` | `x = 5 # Ini komentar inline` | **Komentar satu baris.** Mengabaikan sisa teks di baris itu. |
 | `""" ... """` | `"""Ini komentar` <br> `multi-baris."""` | **Komentar multi-baris.** Sering digunakan untuk komentar blok. |
 
------
-
-#### **Operator Aritmetika **
+### **Operator Aritmetika **
 
 | Sintaks | Contoh | Penjelasan |
 | :--- | :--- | :--- |
 | `+`, `-`, `*`, `/` | `5 + 2` | Penjumlahan, Pengurangan, Perkalian, Pembagian. |
 | `%` | `10 % 3` | **Sisa Hasil Bagi (Modulo),** hasilnya `1`. |
 | `**` | `2 ** 3` | **Perpangkatan,** hasilnya `8`. |
------
 
------
+\newpage
+## ============== **Ekplorasi Live Coding** ======================
 
-### **EKSPLORASI LIVE CODING**
-
-#### **Tutor 1.1: Utak-atik Kode**
+### **Tutor 1.1: Utak-atik Kode**
 
 Salin kode ini dan lakukan eksperimen berikut:
 
@@ -102,9 +98,10 @@ print("Hello, World.")
 3.  Tambahkan komentar `# Ini eksperimenku`. Apakah outputnya berubah?
 4.  Hapus salah satu tanda kutip, misalnya jadi `print("Hello, World.)`. Apa pesan error yang muncul?
 5.  Salah ketik `print` menjadi `prnt`. Apa pesan error yang muncul?
------
 
-#### **Tutor 1.2: Men-debug Kode **
+
+\newpage
+### **Tutor 1.2: Men-debug Kode **
 
 Program di bawah ini penuh dengan *bug*. Di versi ini, tanggalnya sudah ditentukan di dalam variabel, jadi kamu hanya perlu fokus memperbaiki **kesalahan sintaks** agar program bisa berjalan dan menghasilkan output yang benar.
 
@@ -131,7 +128,7 @@ days2 = tanggal2 + (bulan2 * 30) + (tahun2 * 365)
 
 selisih = abs(days1 - days2)
 
-print(f"Selisih diantara 2 hari tersebut adalah: {selisih} hari.) # hemmm, ada yang aneh dengan tanda kurungnya
+print(f"Selisih diantara 2 hari tersebut adalah: {selisih} hari.) # hem, tanda kurungnya aneh
 
 # Mengubah selisih hari kembali ke format tahun, bulan, hari
 hasil_tahun = selisih // 365
@@ -142,11 +139,11 @@ hasil_tanggal = selisih % 30
 print(f"atau: {hasil_tahun} tahun, {hasil_bulan} bulan, {hasil_tanggal} hari")
 ```
 
------
 
-#### **Tutor 1.3: Mencoba Python Interactive Shell**
+\newpage
+### **Tutor 1.3: Mencoba Python Interactive Shell**
 
-Bayangkan kamu punya sebuah "area eksperimen" atau "kalkulator super" di mana kamu bisa mencoba perintah Python satu per satu dan langsung melihat hasilnya, tanpa perlu menyimpan dan menjalankan file. Itulah **Python Interactive Shell**\!
+**Python Interactive Shell** adalah "area eksperimen"di mana kamu bisa mencoba perintah Python satu per satu dan langsung melihat hasilnya, tanpa perlu menyimpan dan menjalankan file. 
 
 Ini adalah salah satu *tool* terbaik untuk belajar dan mencoba ide-ide kecil dengan cepat.
 
@@ -156,7 +153,7 @@ Ini adalah salah satu *tool* terbaik untuk belajar dan mencoba ide-ide kecil den
 2. Ketik `python` (atau `python3` pada beberapa sistem) lalu tekan **Enter**.
 3. Kamu akan melihat prompt berubah menjadi `>>>`. Ini tandanya Python Shell sudah siap menerima perintahmu\!
 
-##### **Ayo Bermain\! Skenario: Toko Kue Ajaib**
+##### **Ayo Bermain\!**
 
 Ketik perintah di bawah ini satu per satu setelah `>>>` dan lihat apa yang terjadi setelah kamu menekan **Enter**.
 
@@ -218,15 +215,12 @@ Ketik perintah di bawah ini satu per satu setelah `>>>` dan lihat apa yang terja
 
 Untuk keluar dari shell, cukup ketik `exit()` dan tekan **Enter**.
 
-Tentu, ini draf untuk seksi 1.4 yang berisi instruksi pengerjaan soal berdasarkan file yang kamu berikan.
 
----
+\newpage
+## ============== **Panduan Materi dan Tugas** ======================
+Ada dua bagian utama: **Materi M1** dan **Tugas T1**. Cara mengerjakannya sedikit berbeda.
 
-#### **Tutor 1.4: Petunjuk Pengerjaan Soal 📝**
-
-*Wait!* Sebelum mulai, baca dulu panduan ini agar kamu tahu persis apa yang harus dilakukan untuk setiap jenis soal. Ada dua bagian utama: **Materi M1** dan **Tugas T1**. Cara mengerjakannya sedikit berbeda.
-
-#### **Untuk Soal-soal Materi M1 (Kalkulator)**
+### **Untuk Soal-soal Materi M1 (Kalkulator)**
 
 Soal-soal di bagian ini (Radian, Torsi, Gaya Coulomb) bertujuan untuk melatih logika dasar, penggunaan variabel, dan operator matematika. Kamu akan membuat program dari nol.
 
@@ -245,37 +239,23 @@ Soal-soal di bagian ini (Radian, Torsi, Gaya Coulomb) bertujuan untuk melatih lo
 
 4.  **Jalankan & Periksa:** Buka terminal, lalu jalankan file-mu dengan perintah `python nama_file.py`. Bandingkan output programmu dengan contoh yang ada di soal.
 
----
-Tentu, ini versi instruksi yang diperbaiki agar lebih jelas dan alurnya lebih baik.
 
-#### **Untuk Soal Tugas T1 (Navigasi Robot) 🤖**
+### **Untuk Soal Tugas T1 (Navigasi Robot)**
 
 Soal ini berbeda! Kamu tidak membuat file baru, tetapi **mengisi kode** pada file yang sudah ada untuk menggerakkan sebuah robot.
 
----
-
-### **Perintah yang Tersedia 📜**
+#### **Perintah yang Tersedia**
 
 Gunakan perintah-perintah berikut di dalam kodemu untuk mengontrol pergerakan robot:
 
-* `restart()`
-    * Mengembalikan robot ke posisi awal (0, 0) dan menghadap ke arah semula.
+* `restart()`: Mengembalikan robot ke posisi dan arah awal.
+* `maju(sekian_pixel)`: Menggerakkan robot maju sejauh `sekian_pixel`.
+* `mundur(sekian_pixel)`: Menggerakkan robot mundur sejauh `sekian_pixel`.
+* `putar_kanan(sekian_derajat)`: Memutar robot ke **kanan** sebesar `sekian_derajat`.
+* `putar_kiri(sekian_derajat)`: Memutar robot ke **kiri** sebesar `sekian_derajat`.
 
-* `maju(pixel)`
-    * Membuat robot bergerak maju lurus sejauh jumlah `pixel` yang ditentukan. Contoh: `maju(123)`.
 
-* `mundur(pixel)`
-    * Membuat robot bergerak mundur lurus sejauh jumlah `pixel` yang ditentukan. Contoh: `mundur(9)`.
-
-* `putar_kanan(derajat)`
-    * Membuat robot berputar di tempat ke **kanan** sebesar `derajat`. Contoh: `putar_kanan(-120)`.
-
-* `putar_kiri(derajat)`
-    * Membuat robot berputar di tempat ke **kiri** sebesar `derajat`. Contoh: `putar_kiri(90)`.
-
----
-
-### **Langkah Pengerjaan ✍️**
+#### **Langkah Pengerjaan**
 
 1.  **Buka File Jawaban:**
     Cari dan buka file bernama `jawabanmu_M1_navigasirobot.py` yang ada di dalam folder `jawaban_akhir`.
@@ -291,6 +271,6 @@ Gunakan perintah-perintah berikut di dalam kodemu untuk mengontrol pergerakan ro
     * **Untuk Memastikan Jawaban Benar:** Jalankan file `test_M1_goalachieved.py` yang ada di folder `penguji_otomatis`. Terminal akan memberimu pesan **"OK"** jika berhasil atau **"FAILED"** jika gagal.
 
 4.  **Kumpulkan Jawaban:**
-    Setelah pengujian otomatis menunjukkan **"OK"**, simpan file jawabanmu dan kumpulkan tugasmu menggunakan `git push`.
+    Simpan file jawabanmu dan kumpulkan tugasmu menggunakan `git push`.
 
 Jika ada kesulitan, jangan ragu untuk bertanya. Selamat mengerjakan!
